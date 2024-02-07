@@ -13,7 +13,7 @@
     padding: 12px 20px;
   }
   .navBar > img {
-    height: fit-content;
+    max-height: fit-content;
     width: 150px;
   }
   .navBar > ul {
@@ -82,5 +82,6 @@
   }
   .smallImg {
     width: 20px;
+    height: 20px;
   }
   

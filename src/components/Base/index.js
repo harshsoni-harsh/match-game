@@ -21,6 +21,10 @@ class Base extends Component {
 
   imageClick = pressedId => {
     const {score, id, time} = this.state
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
     if (pressedId === id && time !== 0) {
       this.setState(prevState => ({
         score: prevState.score + 1,
@@ -53,7 +57,7 @@ class Base extends Component {
   }
 
   playAgain = () => {
-    this.setState({time: 60, isOver: false})
+    this.setState({time: 60, isOver: false, score: 0})
     this.timer = setInterval(this.tick, 1000)
   }
 

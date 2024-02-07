@@ -21,7 +21,7 @@ const Game = props => {
           {thumbnailsList.map(o => (
             <li key={o.id}>
               <button type="button" onClick={() => imageClick(o.id)}>
-                <img className="smallImg" src={o.thumbnailUrl} alt="thumbnail" />
+                <img src={o.thumbnailUrl} alt="thumbnail" />
               </button>
             </li>
           ))}
